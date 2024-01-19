@@ -32,6 +32,7 @@ COPY main.go main.go
 COPY pkg/ pkg/
 
 # Build
+RUN go mod tidy
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 GO111MODULE=on go build -a -o /usr/bin/spark-operator main.go
 
 FROM ${SPARK_IMAGE}
