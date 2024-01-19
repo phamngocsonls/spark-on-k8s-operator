@@ -278,6 +278,12 @@ func getDriverRequestResource(app *v1beta2.SparkApplication) corev1.ResourceList
 			minResource[corev1.ResourceMemory] = value
 		}
 	}
+	//MemoryLimit correspond to driver's memory pod limit
+	if app.Spec.Driver.MemoryLimit != nil {
+		if value, err := resource.ParseQuantity(*app.Spec.Driver.MemoryLimit); err == nil {
+			minResource[corev1.ResourceMemory] = value
+		}
+	}
 	if app.Spec.Driver.MemoryOverhead != nil {
 		if value, err := resource.ParseQuantity(*app.Spec.Driver.MemoryOverhead); err == nil {
 			if existing, ok := minResource[corev1.ResourceMemory]; ok {
