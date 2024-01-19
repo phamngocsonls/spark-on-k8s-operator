@@ -377,6 +377,10 @@ func addExecutorConfOptions(app *v1beta2.SparkApplication, submissionID string) 
 		executorConfOptions = append(executorConfOptions,
 			fmt.Sprintf("spark.executor.memory=%s", *app.Spec.Executor.Memory))
 	}
+	if app.Spec.Executor.MemoryLimit != nil {
+		executorConfOptions = append(executorConfOptions,
+			fmt.Sprintf("spark.executor.memoryLimit=%s", *app.Spec.Executor.MemoryLimit))
+	}
 	if app.Spec.Executor.MemoryOverhead != nil {
 		executorConfOptions = append(executorConfOptions,
 			fmt.Sprintf("spark.executor.memoryOverhead=%s", *app.Spec.Executor.MemoryOverhead))
