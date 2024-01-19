@@ -237,7 +237,7 @@ func getExecutorRequestResource(app *v1beta2.SparkApplication) corev1.ResourceLi
 			minResource[corev1.ResourceMemory] = value
 		}
 	}
-	if app.Spec.Executor.memoryLimit != nil {
+	if app.Spec.Executor.MemoryLimit != nil {
 		if value, err := resource.ParseQuantity(*app.Spec.Executor.MemoryLimit); err == nil {
 			minResource[corev1.ResourceMemory] = value
 		}
