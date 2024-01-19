@@ -350,9 +350,6 @@ type SparkPodSpec struct {
 	// Memory is the amount of memory to request for the pod.
 	// Optional.
 	Memory *string `json:"memory,omitempty"`
-	// MemoryLimit is the amount of memory to request for the pod.
-	// Optional.
-	Memory *string `json:"memoryLimit,omitempty"`
 	// MemoryOverhead is the amount of off-heap memory to allocate in cluster mode, in MiB unless otherwise specified.
 	// Optional.
 	MemoryOverhead *string `json:"memoryOverhead,omitempty"`
