@@ -18,7 +18,7 @@ package e2e
 
 import (
 	"flag"
-	"github.com/GoogleCloudPlatform/spark-on-k8s-operator/pkg/apis/sparkoperator.k8s.io/v1beta2"
+	"github.com/phamngocsonls/spark-on-k8s-operator/pkg/apis/sparkoperator.k8s.io/v1beta2"
 	"github.com/stretchr/testify/assert"
 	"log"
 	"os"

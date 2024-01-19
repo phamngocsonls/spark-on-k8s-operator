@@ -2,11 +2,11 @@
 .SILENT:
 .PHONY: clean-sparkctl
 
-SPARK_OPERATOR_GOPATH=/go/src/github.com/GoogleCloudPlatform/spark-on-k8s-operator
+SPARK_OPERATOR_GOPATH=/go/src/github.com/phamngocsonls/spark-on-k8s-operator
 DEP_VERSION:=`grep DEP_VERSION= Dockerfile | awk -F\" '{print $$2}'`
 BUILDER=`grep "FROM golang:" Dockerfile | awk '{print $$2}'`
 UNAME:=`uname | tr '[:upper:]' '[:lower:]'`
-REPO=github.com/GoogleCloudPlatform/spark-on-k8s-operator/pkg
+REPO=github.com/phamngocsonls/spark-on-k8s-operator/pkg
 
 all: clean-sparkctl build-sparkctl install-sparkctl
 
