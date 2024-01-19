@@ -1184,6 +1184,8 @@ spec:
                       type: object
                     memory:
                       type: string
+                    memoryLimit:
+                      type: string
                     memoryOverhead:
                       type: string
                     nodeSelector:
@@ -2909,6 +2911,8 @@ spec:
                         type: string
                       type: object
                     memory:
+                      type: string
+                    memoryLimit:
                       type: string
                     memoryOverhead:
                       type: string

@@ -40,7 +40,7 @@ build-api-docs:
 	docker run -v $$(pwd):/repo/ temp-api-ref-docs \
 		sh -c "cd /repo/ && /go/gen-crd-api-reference-docs/gen-crd-api-reference-docs \
 			-config /repo/hack/api-docs/api-docs-config.json \
-			-api-dir github.com/GoogleCloudPlatform/spark-on-k8s-operator/pkg/apis/sparkoperator.k8s.io/v1beta2 \
+			-api-dir github.com/phamngocsonls/spark-on-k8s-operator/pkg/apis/sparkoperator.k8s.io/v1beta2 \
 			-template-dir /repo/hack/api-docs/api-docs-template \
 			-out-file /repo/docs/api-docs.md"
 
