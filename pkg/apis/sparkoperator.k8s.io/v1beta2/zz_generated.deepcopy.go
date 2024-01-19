@@ -828,6 +828,7 @@ func (in *SparkPodSpec) DeepCopyInto(out *SparkPodSpec) {
 		in, out := &in.MemoryLimit, &out.MemoryLimit
 		*out = new(string)
 		**out = **in
+	}
 	if in.MemoryOverhead != nil {
 		in, out := &in.MemoryOverhead, &out.MemoryOverhead
 		*out = new(string)
