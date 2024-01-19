@@ -40,14 +40,14 @@ import (
 	"k8s.io/client-go/tools/record"
 	"k8s.io/utils/clock"
 
-	"github.com/GoogleCloudPlatform/spark-on-k8s-operator/pkg/batchscheduler"
-	crclientset "github.com/GoogleCloudPlatform/spark-on-k8s-operator/pkg/client/clientset/versioned"
-	crinformers "github.com/GoogleCloudPlatform/spark-on-k8s-operator/pkg/client/informers/externalversions"
-	operatorConfig "github.com/GoogleCloudPlatform/spark-on-k8s-operator/pkg/config"
-	"github.com/GoogleCloudPlatform/spark-on-k8s-operator/pkg/controller/scheduledsparkapplication"
-	"github.com/GoogleCloudPlatform/spark-on-k8s-operator/pkg/controller/sparkapplication"
-	"github.com/GoogleCloudPlatform/spark-on-k8s-operator/pkg/util"
-	"github.com/GoogleCloudPlatform/spark-on-k8s-operator/pkg/webhook"
+	"github.com/phamngocsonls/spark-on-k8s-operator/pkg/batchscheduler"
+	crclientset "github.com/phamngocsonls/spark-on-k8s-operator/pkg/client/clientset/versioned"
+	crinformers "github.com/phamngocsonls/spark-on-k8s-operator/pkg/client/informers/externalversions"
+	operatorConfig "github.com/phamngocsonls/spark-on-k8s-operator/pkg/config"
+	"github.com/phamngocsonls/spark-on-k8s-operator/pkg/controller/scheduledsparkapplication"
+	"github.com/phamngocsonls/spark-on-k8s-operator/pkg/controller/sparkapplication"
+	"github.com/phamngocsonls/spark-on-k8s-operator/pkg/util"
+	"github.com/phamngocsonls/spark-on-k8s-operator/pkg/webhook"
 )
 
 var (

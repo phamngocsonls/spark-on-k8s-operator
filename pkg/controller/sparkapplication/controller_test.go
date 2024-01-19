@@ -38,10 +38,10 @@ import (
 	"k8s.io/client-go/tools/record"
 
 	"github.com/phamngocsonls/spark-on-k8s-operator/pkg/apis/sparkoperator.k8s.io/v1beta2"
-	crdclientfake "github.com/GoogleCloudPlatform/spark-on-k8s-operator/pkg/client/clientset/versioned/fake"
-	crdinformers "github.com/GoogleCloudPlatform/spark-on-k8s-operator/pkg/client/informers/externalversions"
-	"github.com/GoogleCloudPlatform/spark-on-k8s-operator/pkg/config"
-	"github.com/GoogleCloudPlatform/spark-on-k8s-operator/pkg/util"
+	crdclientfake "github.com/phamngocsonls/spark-on-k8s-operator/pkg/client/clientset/versioned/fake"
+	crdinformers "github.com/phamngocsonls/spark-on-k8s-operator/pkg/client/informers/externalversions"
+	"github.com/phamngocsonls/spark-on-k8s-operator/pkg/config"
+	"github.com/phamngocsonls/spark-on-k8s-operator/pkg/util"
 )
 
 func newFakeController(app *v1beta2.SparkApplication, pods ...*apiv1.Pod) (*Controller, *record.FakeRecorder) {

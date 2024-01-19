@@ -39,11 +39,11 @@ import (
 	"k8s.io/utils/clock"
 
 	"github.com/phamngocsonls/spark-on-k8s-operator/pkg/apis/sparkoperator.k8s.io/v1beta2"
-	crdclientset "github.com/GoogleCloudPlatform/spark-on-k8s-operator/pkg/client/clientset/versioned"
-	crdscheme "github.com/GoogleCloudPlatform/spark-on-k8s-operator/pkg/client/clientset/versioned/scheme"
-	crdinformers "github.com/GoogleCloudPlatform/spark-on-k8s-operator/pkg/client/informers/externalversions"
-	crdlisters "github.com/GoogleCloudPlatform/spark-on-k8s-operator/pkg/client/listers/sparkoperator.k8s.io/v1beta2"
-	"github.com/GoogleCloudPlatform/spark-on-k8s-operator/pkg/config"
+	crdclientset "github.com/phamngocsonls/spark-on-k8s-operator/pkg/client/clientset/versioned"
+	crdscheme "github.com/phamngocsonls/spark-on-k8s-operator/pkg/client/clientset/versioned/scheme"
+	crdinformers "github.com/phamngocsonls/spark-on-k8s-operator/pkg/client/informers/externalversions"
+	crdlisters "github.com/phamngocsonls/spark-on-k8s-operator/pkg/client/listers/sparkoperator.k8s.io/v1beta2"
+	"github.com/phamngocsonls/spark-on-k8s-operator/pkg/config"
 )
 
 var (

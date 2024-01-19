@@ -25,7 +25,7 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
 	"github.com/phamngocsonls/spark-on-k8s-operator/pkg/apis/sparkoperator.k8s.io/v1beta2"
-	"github.com/GoogleCloudPlatform/spark-on-k8s-operator/pkg/config"
+	"github.com/phamngocsonls/spark-on-k8s-operator/pkg/config"
 )
 
 // NewHash32 returns a 32-bit hash computed from the given byte slice.

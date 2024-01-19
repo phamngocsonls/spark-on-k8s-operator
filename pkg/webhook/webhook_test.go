@@ -31,9 +31,9 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 
 	spov1beta2 "github.com/phamngocsonls/spark-on-k8s-operator/pkg/apis/sparkoperator.k8s.io/v1beta2"
-	crdclientfake "github.com/GoogleCloudPlatform/spark-on-k8s-operator/pkg/client/clientset/versioned/fake"
-	crdinformers "github.com/GoogleCloudPlatform/spark-on-k8s-operator/pkg/client/informers/externalversions"
-	"github.com/GoogleCloudPlatform/spark-on-k8s-operator/pkg/config"
+	crdclientfake "github.com/phamngocsonls/spark-on-k8s-operator/pkg/client/clientset/versioned/fake"
+	crdinformers "github.com/phamngocsonls/spark-on-k8s-operator/pkg/client/informers/externalversions"
+	"github.com/phamngocsonls/spark-on-k8s-operator/pkg/config"
 )
 
 func TestMutatePod(t *testing.T) {

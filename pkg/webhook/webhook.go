@@ -37,13 +37,13 @@ import (
 	"k8s.io/client-go/informers"
 	"k8s.io/client-go/kubernetes"
 
-	crdapi "github.com/GoogleCloudPlatform/spark-on-k8s-operator/pkg/apis/sparkoperator.k8s.io"
+	crdapi "github.com/phamngocsonls/spark-on-k8s-operator/pkg/apis/sparkoperator.k8s.io"
 	crdv1beta2 "github.com/phamngocsonls/spark-on-k8s-operator/pkg/apis/sparkoperator.k8s.io/v1beta2"
-	crinformers "github.com/GoogleCloudPlatform/spark-on-k8s-operator/pkg/client/informers/externalversions"
-	crdlisters "github.com/GoogleCloudPlatform/spark-on-k8s-operator/pkg/client/listers/sparkoperator.k8s.io/v1beta2"
-	"github.com/GoogleCloudPlatform/spark-on-k8s-operator/pkg/config"
-	"github.com/GoogleCloudPlatform/spark-on-k8s-operator/pkg/util"
-	"github.com/GoogleCloudPlatform/spark-on-k8s-operator/pkg/webhook/resourceusage"
+	crinformers "github.com/phamngocsonls/spark-on-k8s-operator/pkg/client/informers/externalversions"
+	crdlisters "github.com/phamngocsonls/spark-on-k8s-operator/pkg/client/listers/sparkoperator.k8s.io/v1beta2"
+	"github.com/phamngocsonls/spark-on-k8s-operator/pkg/config"
+	"github.com/phamngocsonls/spark-on-k8s-operator/pkg/util"
+	"github.com/phamngocsonls/spark-on-k8s-operator/pkg/webhook/resourceusage"
 )
 
 const (

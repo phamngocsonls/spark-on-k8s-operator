@@ -30,7 +30,7 @@ import (
 	"k8s.io/kubernetes/pkg/apis/policy"
 
 	"github.com/phamngocsonls/spark-on-k8s-operator/pkg/apis/sparkoperator.k8s.io/v1beta2"
-	"github.com/GoogleCloudPlatform/spark-on-k8s-operator/pkg/config"
+	"github.com/phamngocsonls/spark-on-k8s-operator/pkg/config"
 )
 
 const (
